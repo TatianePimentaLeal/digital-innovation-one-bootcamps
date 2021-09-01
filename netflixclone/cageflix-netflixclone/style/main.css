@@ -1,0 +1,132 @@
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+header nav a:hover{
+    color: #FFF;
+}
+
+/*filme principal*/
+.destaque {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/CAPA_Nicolas-Cage-Background.jpg');
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.destaque .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 70%;
+}
+
+.destaque .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin: 5px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.destaque .container {
+    width: 70%;
+}
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.box-movie:hover {
+    cursor: pointer;
+}
+
+h4 {
+    margin: 20px;
+    font-size: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h4 a {
+    color: white;
+    text-decoration: none;
+}
+
+h4 a:hover {
+    text-decoration: underline;
+}
+
+.carousel-movies {
+    margin-top: 5px;
+}
+
